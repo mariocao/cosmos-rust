@@ -56,6 +56,13 @@ pub mod cosmos {
             }
         }
 
+        /// Node support.
+        pub mod node {
+            pub mod v1beta1 {
+                include!("prost/cosmos-sdk/cosmos.base.node.v1beta1.rs");
+            }
+        }
+
         /// Key-value pairs.
         pub mod kv {
             pub mod v1beta1 {
